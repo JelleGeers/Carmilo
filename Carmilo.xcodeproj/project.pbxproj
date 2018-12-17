@@ -8,22 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		1E1E17E421B5673E00174653 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1E17E321B5673E00174653 /* AppDelegate.swift */; };
-		1E1E17E621B5673E00174653 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1E17E521B5673E00174653 /* ViewController.swift */; };
 		1E1E17E921B5673E00174653 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E1E17E721B5673E00174653 /* Main.storyboard */; };
 		1E1E17EB21B5673E00174653 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E1E17EA21B5673E00174653 /* Assets.xcassets */; };
 		1E1E17EE21B5673E00174653 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E1E17EC21B5673E00174653 /* LaunchScreen.storyboard */; };
-		1E1E17F621B5676300174653 /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1E17F521B5676300174653 /* UserTableViewController.swift */; };
+		1E6E814421C828D1001A1B67 /* RidesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6E814321C828D1001A1B67 /* RidesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1E1E17E021B5673E00174653 /* Carmilo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carmilo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E1E17E321B5673E00174653 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1E1E17E521B5673E00174653 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1E1E17E821B5673E00174653 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E1E17EA21B5673E00174653 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E1E17ED21B5673E00174653 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E1E17EF21B5673E00174653 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1E1E17F521B5676300174653 /* UserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewController.swift; sourceTree = "<group>"; };
+		1E6E814321C828D1001A1B67 /* RidesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +55,11 @@
 			isa = PBXGroup;
 			children = (
 				1E1E17E321B5673E00174653 /* AppDelegate.swift */,
-				1E1E17E521B5673E00174653 /* ViewController.swift */,
 				1E1E17E721B5673E00174653 /* Main.storyboard */,
 				1E1E17EA21B5673E00174653 /* Assets.xcassets */,
 				1E1E17EC21B5673E00174653 /* LaunchScreen.storyboard */,
 				1E1E17EF21B5673E00174653 /* Info.plist */,
-				1E1E17F521B5676300174653 /* UserTableViewController.swift */,
+				1E6E814321C828D1001A1B67 /* RidesTableViewController.swift */,
 			);
 			path = Carmilo;
 			sourceTree = "<group>";
@@ -138,9 +135,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E1E17E621B5673E00174653 /* ViewController.swift in Sources */,
-				1E1E17F621B5676300174653 /* UserTableViewController.swift in Sources */,
 				1E1E17E421B5673E00174653 /* AppDelegate.swift in Sources */,
+				1E6E814421C828D1001A1B67 /* RidesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
