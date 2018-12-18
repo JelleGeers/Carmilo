@@ -19,22 +19,6 @@ class RidesTableViewController: UITableViewController {
         fetchJSON()
     }
     
-    struct Ride: Decodable {
-        let name : String
-        let rides : RideInfo
-    }
-    struct RideInfo : Decodable {
-        let destination : String
-        let date : String
-        let address: Address
-    }
-    struct Address : Decodable {
-        let street: String
-        let houseNr: String
-        let zipcode: String
-    }
-    
-    
     fileprivate func fetchJSON() {
         let urlString = "http://localhost:3000/API/rides"
         guard let url = URL(string: urlString) else { return }

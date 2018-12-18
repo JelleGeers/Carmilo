@@ -12,6 +12,10 @@
 		1E1E17EB21B5673E00174653 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E1E17EA21B5673E00174653 /* Assets.xcassets */; };
 		1E1E17EE21B5673E00174653 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E1E17EC21B5673E00174653 /* LaunchScreen.storyboard */; };
 		1E6E814421C828D1001A1B67 /* RidesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6E814321C828D1001A1B67 /* RidesTableViewController.swift */; };
+		1EDF7CC021C92B7D000192D7 /* AddRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDF7CBF21C92B7D000192D7 /* AddRideViewController.swift */; };
+		1EDF7CC421C92E1C000192D7 /* RideInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDF7CC321C92E1C000192D7 /* RideInfo.swift */; };
+		1EDF7CC621C92E3D000192D7 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDF7CC521C92E3D000192D7 /* Address.swift */; };
+		1EDF7CC821C93335000192D7 /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDF7CC721C93335000192D7 /* Ride.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		1E1E17ED21B5673E00174653 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E1E17EF21B5673E00174653 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E6E814321C828D1001A1B67 /* RidesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesTableViewController.swift; sourceTree = "<group>"; };
+		1EDF7CBF21C92B7D000192D7 /* AddRideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRideViewController.swift; sourceTree = "<group>"; };
+		1EDF7CC321C92E1C000192D7 /* RideInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideInfo.swift; sourceTree = "<group>"; };
+		1EDF7CC521C92E3D000192D7 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		1EDF7CC721C93335000192D7 /* Ride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 				1E1E17EC21B5673E00174653 /* LaunchScreen.storyboard */,
 				1E1E17EF21B5673E00174653 /* Info.plist */,
 				1E6E814321C828D1001A1B67 /* RidesTableViewController.swift */,
+				1EDF7CC721C93335000192D7 /* Ride.swift */,
+				1EDF7CC321C92E1C000192D7 /* RideInfo.swift */,
+				1EDF7CBF21C92B7D000192D7 /* AddRideViewController.swift */,
+				1EDF7CC521C92E3D000192D7 /* Address.swift */,
 			);
 			path = Carmilo;
 			sourceTree = "<group>";
@@ -135,8 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EDF7CC621C92E3D000192D7 /* Address.swift in Sources */,
 				1E1E17E421B5673E00174653 /* AppDelegate.swift in Sources */,
+				1EDF7CC421C92E1C000192D7 /* RideInfo.swift in Sources */,
 				1E6E814421C828D1001A1B67 /* RidesTableViewController.swift in Sources */,
+				1EDF7CC021C92B7D000192D7 /* AddRideViewController.swift in Sources */,
+				1EDF7CC821C93335000192D7 /* Ride.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
