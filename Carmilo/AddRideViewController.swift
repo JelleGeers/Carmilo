@@ -28,7 +28,7 @@ class AddRideViewController: UIViewController {
     }
     
     @IBAction func addRide(_ sender: UIButton) {
-        guard let url = URL(string:"http://localhost:3000/API/rides/5c190a94f6611ca7b634e9b9/rides/") else { return }
+        guard let url = URL(string:"http://localhost:3000/API/rides/5c191c78f6611ca7b634e9c9/rides/") else { return }
         var request = URLRequest(url :url)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
