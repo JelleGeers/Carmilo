@@ -12,12 +12,15 @@
 		1E1E17EB21B5673E00174653 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E1E17EA21B5673E00174653 /* Assets.xcassets */; };
 		1E1E17EE21B5673E00174653 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E1E17EC21B5673E00174653 /* LaunchScreen.storyboard */; };
 		1E6E814421C828D1001A1B67 /* AllRidesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6E814321C828D1001A1B67 /* AllRidesTableViewController.swift */; };
+		1E7C437B21CAB8A80062680C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7C437A21CAB8A80062680C /* HomeViewController.swift */; };
 		1EDF7CC021C92B7D000192D7 /* AddRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDF7CBF21C92B7D000192D7 /* AddRideViewController.swift */; };
 		1EDF7CC421C92E1C000192D7 /* RideInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDF7CC321C92E1C000192D7 /* RideInfo.swift */; };
 		1EDF7CC621C92E3D000192D7 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDF7CC521C92E3D000192D7 /* Address.swift */; };
 		1EDF7CC821C93335000192D7 /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDF7CC721C93335000192D7 /* Ride.swift */; };
 		1EDF7CCA21C95293000192D7 /* UserPersonalRidesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDF7CC921C95293000192D7 /* UserPersonalRidesTableViewController.swift */; };
 		1EDF7CCE21C97949000192D7 /* Passenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDF7CCD21C97949000192D7 /* Passenger.swift */; };
+		1EFCADA221CAB602002EBB55 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1EFCADA121CAB602002EBB55 /* Auth0.plist */; };
+		AE9989EAFFDD2B61288F47C5 /* Pods_Carmilo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222E7C863E6FA148A56B00D3 /* Pods_Carmilo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,12 +31,17 @@
 		1E1E17ED21B5673E00174653 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E1E17EF21B5673E00174653 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E6E814321C828D1001A1B67 /* AllRidesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllRidesTableViewController.swift; sourceTree = "<group>"; };
+		1E7C437A21CAB8A80062680C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1EDF7CBF21C92B7D000192D7 /* AddRideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRideViewController.swift; sourceTree = "<group>"; };
 		1EDF7CC321C92E1C000192D7 /* RideInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideInfo.swift; sourceTree = "<group>"; };
 		1EDF7CC521C92E3D000192D7 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		1EDF7CC721C93335000192D7 /* Ride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
 		1EDF7CC921C95293000192D7 /* UserPersonalRidesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPersonalRidesTableViewController.swift; sourceTree = "<group>"; };
 		1EDF7CCD21C97949000192D7 /* Passenger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passenger.swift; sourceTree = "<group>"; };
+		1EFCADA121CAB602002EBB55 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
+		222E7C863E6FA148A56B00D3 /* Pods_Carmilo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carmilo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D1A35C3098A0EB8C510D16B /* Pods-Carmilo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carmilo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Carmilo/Pods-Carmilo.release.xcconfig"; sourceTree = "<group>"; };
+		64CF0210420C4F24425C9AA5 /* Pods-Carmilo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carmilo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Carmilo/Pods-Carmilo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE9989EAFFDD2B61288F47C5 /* Pods_Carmilo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +61,8 @@
 			children = (
 				1E1E17E221B5673E00174653 /* Carmilo */,
 				1E1E17E121B5673E00174653 /* Products */,
+				C2BD71D9A82A834E272F4AC1 /* Pods */,
+				2077173757E1632426A5636F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				1E1E17E321B5673E00174653 /* AppDelegate.swift */,
+				1E7C437A21CAB8A80062680C /* HomeViewController.swift */,
+				1EFCADA121CAB602002EBB55 /* Auth0.plist */,
 				1E1E17E721B5673E00174653 /* Main.storyboard */,
 				1EDF7CC921C95293000192D7 /* UserPersonalRidesTableViewController.swift */,
 				1E1E17EA21B5673E00174653 /* Assets.xcassets */,
@@ -82,6 +95,23 @@
 			path = Carmilo;
 			sourceTree = "<group>";
 		};
+		2077173757E1632426A5636F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				222E7C863E6FA148A56B00D3 /* Pods_Carmilo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2BD71D9A82A834E272F4AC1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64CF0210420C4F24425C9AA5 /* Pods-Carmilo.debug.xcconfig */,
+				2D1A35C3098A0EB8C510D16B /* Pods-Carmilo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,9 +119,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E1E17F221B5673E00174653 /* Build configuration list for PBXNativeTarget "Carmilo" */;
 			buildPhases = (
+				742713E6C779C45AE3359996 /* [CP] Check Pods Manifest.lock */,
 				1E1E17DC21B5673E00174653 /* Sources */,
 				1E1E17DD21B5673E00174653 /* Frameworks */,
 				1E1E17DE21B5673E00174653 /* Resources */,
+				C8497A669E4EE03C4C193CE0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,10 +175,60 @@
 				1E1E17EE21B5673E00174653 /* LaunchScreen.storyboard in Resources */,
 				1E1E17EB21B5673E00174653 /* Assets.xcassets in Resources */,
 				1E1E17E921B5673E00174653 /* Main.storyboard in Resources */,
+				1EFCADA221CAB602002EBB55 /* Auth0.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		742713E6C779C45AE3359996 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Carmilo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8497A669E4EE03C4C193CE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Carmilo/Pods-Carmilo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Auth0/Auth0.framework",
+				"${BUILT_PRODUCTS_DIR}/SimpleKeychain/SimpleKeychain.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Auth0.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimpleKeychain.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Carmilo/Pods-Carmilo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1E1E17DC21B5673E00174653 /* Sources */ = {
@@ -158,6 +240,7 @@
 				1EDF7CCE21C97949000192D7 /* Passenger.swift in Sources */,
 				1EDF7CC421C92E1C000192D7 /* RideInfo.swift in Sources */,
 				1E6E814421C828D1001A1B67 /* AllRidesTableViewController.swift in Sources */,
+				1E7C437B21CAB8A80062680C /* HomeViewController.swift in Sources */,
 				1EDF7CCA21C95293000192D7 /* UserPersonalRidesTableViewController.swift in Sources */,
 				1EDF7CC021C92B7D000192D7 /* AddRideViewController.swift in Sources */,
 				1EDF7CC821C93335000192D7 /* Ride.swift in Sources */,
@@ -304,6 +387,7 @@
 		};
 		1E1E17F321B5673E00174653 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64CF0210420C4F24425C9AA5 /* Pods-Carmilo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -322,6 +406,7 @@
 		};
 		1E1E17F421B5673E00174653 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D1A35C3098A0EB8C510D16B /* Pods-Carmilo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
