@@ -20,7 +20,7 @@ class UserPersonalRidesTableViewController: UITableViewController {
     }
     
     fileprivate func fetchJSON() {
-        let urlString = "http://localhost:3000/API/rides/5c191c78f6611ca7b634e9c9/rides"
+        let urlString = "http://localhost:3000/API/rides/5c195119615068bb5048b7f4/rides"
         guard let url = URL(string: urlString) else { return }
         URLSession.shared.dataTask(with: url) { (data, _, err) in
             DispatchQueue.main.async {
@@ -51,8 +51,8 @@ class UserPersonalRidesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cellId")
         let rideInfo = rides[indexPath.row]
-        cell.textLabel?.text = rideInfo.destination
-        cell.detailTextLabel?.text = String(rideInfo.destination + " " + rideInfo.date)
+        cell.textLabel?.text = rideInfo.departure
+        cell.detailTextLabel?.text = String(rideInfo.departure + " " + rideInfo.date)
         return cell
     }
 

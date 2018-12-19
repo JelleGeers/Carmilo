@@ -17,6 +17,7 @@
 		1EDF7CC621C92E3D000192D7 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDF7CC521C92E3D000192D7 /* Address.swift */; };
 		1EDF7CC821C93335000192D7 /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDF7CC721C93335000192D7 /* Ride.swift */; };
 		1EDF7CCA21C95293000192D7 /* UserPersonalRidesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDF7CC921C95293000192D7 /* UserPersonalRidesTableViewController.swift */; };
+		1EDF7CCE21C97949000192D7 /* Passenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDF7CCD21C97949000192D7 /* Passenger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		1EDF7CC521C92E3D000192D7 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		1EDF7CC721C93335000192D7 /* Ride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
 		1EDF7CC921C95293000192D7 /* UserPersonalRidesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPersonalRidesTableViewController.swift; sourceTree = "<group>"; };
+		1EDF7CCD21C97949000192D7 /* Passenger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passenger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				1E6E814321C828D1001A1B67 /* AllRidesTableViewController.swift */,
 				1EDF7CC721C93335000192D7 /* Ride.swift */,
 				1EDF7CC321C92E1C000192D7 /* RideInfo.swift */,
+				1EDF7CCD21C97949000192D7 /* Passenger.swift */,
 				1EDF7CBF21C92B7D000192D7 /* AddRideViewController.swift */,
 				1EDF7CC521C92E3D000192D7 /* Address.swift */,
 			);
@@ -152,6 +155,7 @@
 			files = (
 				1EDF7CC621C92E3D000192D7 /* Address.swift in Sources */,
 				1E1E17E421B5673E00174653 /* AppDelegate.swift in Sources */,
+				1EDF7CCE21C97949000192D7 /* Passenger.swift in Sources */,
 				1EDF7CC421C92E1C000192D7 /* RideInfo.swift in Sources */,
 				1E6E814421C828D1001A1B67 /* AllRidesTableViewController.swift in Sources */,
 				1EDF7CCA21C95293000192D7 /* UserPersonalRidesTableViewController.swift in Sources */,

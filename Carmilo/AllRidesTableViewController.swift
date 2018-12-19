@@ -13,6 +13,7 @@ class AllRidesTableViewController: UITableViewController {
     var rides = [Ride]()
     var myIndex = 0
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "Ride List"
@@ -24,10 +25,12 @@ class AllRidesTableViewController: UITableViewController {
         guard let url = URL(string: urlString) else { return }
         URLSession.shared.dataTask(with: url) { (data, _, err) in
             DispatchQueue.main.async {
+                
                 if let err = err {
                     print("Failed to get data from url:", err)
                     return
                 }
+
                 
                 guard let data = data else { return }
                 
@@ -51,14 +54,13 @@ class AllRidesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cellId")
         let ride = rides[indexPath.row]
-        cell.textLabel?.text = ride.rides.destination
+        cell.textLabel?.text = ride.rides.departure
         cell.detailTextLabel?.text = String(ride.name + " " + ride.rides.date)
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         myIndex = indexPath.row
-        performSegue(withIdentifier: "segueShowDetail", sender: self)
     }
     
 }

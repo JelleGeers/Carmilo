@@ -68,7 +68,6 @@
                     <connections>
                         <segue destination="hBa-K0-eb4" kind="relationship" relationship="viewControllers" id="RjO-97-nns"/>
                         <segue destination="n7h-Dv-twJ" kind="relationship" relationship="viewControllers" id="U4Y-qj-N4z"/>
-                        <segue destination="Imz-ln-cVE" kind="relationship" relationship="viewControllers" id="DbA-T3-dQn"/>
                         <segue destination="JOU-K5-V4J" kind="relationship" relationship="viewControllers" id="gRT-23-DgS"/>
                     </connections>
                 </tabBarController>
@@ -84,22 +83,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g34-Gz-FQ6">
-                                <rect key="frame" x="147" y="463" width="80" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Voeg rit toe"/>
-                                <connections>
-                                    <action selector="addRide:" destination="Imz-ln-cVE" eventType="touchUpInside" id="Tqh-rc-Uce"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Destination" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n9i-Hx-Upp">
-                                <rect key="frame" x="130" y="139" width="97" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Departure" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n9i-Hx-Upp">
+                                <rect key="frame" x="130" y="138" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Datum" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tda-rO-Mrv">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tda-rO-Mrv">
                                 <rect key="frame" x="130" y="188" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -107,21 +98,37 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Street" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qtQ-hG-USi">
-                                <rect key="frame" x="130" y="234" width="97" height="30"/>
+                                <rect key="frame" x="130" y="283" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="HouseNr" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aRW-T8-fKA">
-                                <rect key="frame" x="130" y="285" width="97" height="30"/>
+                                <rect key="frame" x="130" y="339" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zipcode" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oki-hR-o4K">
-                                <rect key="frame" x="130" y="337" width="97" height="30"/>
+                                <rect key="frame" x="130" y="393" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g34-Gz-FQ6">
+                                <rect key="frame" x="130" y="475" width="110" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Voeg rit toe"/>
+                                <connections>
+                                    <action selector="addRide:" destination="Imz-ln-cVE" eventType="touchUpInside" id="Tqh-rc-Uce"/>
+                                    <segue destination="JOU-K5-V4J" kind="modal" id="cbQ-Xh-DKa"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="maxPassengers" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="obU-VM-A1m">
+                                <rect key="frame" x="130" y="226" width="127" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -133,16 +140,17 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="jvx-5o-KKE"/>
                     <connections>
-                        <outlet property="TextfieldDestination" destination="n9i-Hx-Upp" id="CLJ-Xg-Tfm"/>
                         <outlet property="textfieldDate" destination="Tda-rO-Mrv" id="tTH-gG-6eG"/>
+                        <outlet property="textfieldDeparture" destination="n9i-Hx-Upp" id="qFd-oF-2A3"/>
                         <outlet property="textfieldHousenr" destination="aRW-T8-fKA" id="jiq-bO-kj5"/>
+                        <outlet property="textfieldMaxPassengers" destination="obU-VM-A1m" id="J03-lc-iR6"/>
                         <outlet property="textfieldStreet" destination="qtQ-hG-USi" id="Bac-kd-EJD"/>
                         <outlet property="textfieldZipcode" destination="oki-hR-o4K" id="w3V-Md-Ojb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="epb-UC-JaO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1287" y="645"/>
+            <point key="canvasLocation" x="896.79999999999995" y="1441.529235382309"/>
         </scene>
         <!--Item-->
         <scene sceneID="Ajp-GE-0he">
@@ -152,9 +160,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="953-yH-9lQ">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Title" id="aci-TI-dhR">
+                                    <barButtonItem key="rightBarButtonItem" systemItem="add" id="DZo-ub-bNC">
+                                        <connections>
+                                            <segue destination="Imz-ln-cVE" kind="presentation" id="Vku-Zr-y9N"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="V4z-cf-Tfc">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="V4z-cf-Tfc" id="9rq-JG-zZo">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -168,10 +189,14 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Item" id="pNP-8l-1TN"/>
+                    <navigationItem key="navigationItem" id="0Ke-Iw-iQJ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TCe-Ci-vg6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="663" y="645"/>
+            <point key="canvasLocation" x="916" y="645"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="cbQ-Xh-DKa"/>
+    </inferredMetricsTieBreakers>
 </document>

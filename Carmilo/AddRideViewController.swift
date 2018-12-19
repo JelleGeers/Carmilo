@@ -10,7 +10,8 @@ import UIKit
 
 class AddRideViewController: UIViewController {
     
-    @IBOutlet weak var textfieldDestination: UITextField!
+
+    @IBOutlet weak var textfieldDeparture: UITextField!
     
     @IBOutlet weak var textfieldDate: UITextField!
     
@@ -21,6 +22,7 @@ class AddRideViewController: UIViewController {
     
     @IBOutlet weak var textfieldZipcode: UITextField!
     
+    @IBOutlet weak var textfieldMaxPassengers: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,13 +30,14 @@ class AddRideViewController: UIViewController {
     }
     
     @IBAction func addRide(_ sender: UIButton) {
-        guard let url = URL(string:"http://localhost:3000/API/rides/5c191c78f6611ca7b634e9c9/rides/") else { return }
+        let passenger = [Passenger]()
+        guard let url = URL(string:"http://localhost:3000/API/rides/5c195119615068bb5048b7f4/rides/") else { return }
         var request = URLRequest(url :url)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
         let address = Address(street:self.textfieldStreet.text!, houseNr:self.textfieldHousenr.text!, zipcode:self.textfieldZipcode.text!)
-        let rideInfo = RideInfo(destination:self.textfieldDestination.text!, date:self.textfieldDate.text!,address: address)
+        let rideInfo = RideInfo(departure: self.textfieldDeparture.text!, date: self.textfieldDate.text!,passengers:passenger,address: address, maxPassengers:self.textfieldMaxPassengers.text!)
         do{
             let jsonBody = try JSONEncoder().encode(rideInfo)
             request.httpBody = jsonBody
