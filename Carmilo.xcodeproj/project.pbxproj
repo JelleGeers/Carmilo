@@ -11,8 +11,16 @@
 		1E1E17E921B5673E00174653 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E1E17E721B5673E00174653 /* Main.storyboard */; };
 		1E1E17EB21B5673E00174653 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E1E17EA21B5673E00174653 /* Assets.xcassets */; };
 		1E1E17EE21B5673E00174653 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E1E17EC21B5673E00174653 /* LaunchScreen.storyboard */; };
+		1E26403F21CBE940004CD3A2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E26403E21CBE940004CD3A2 /* HomeViewController.swift */; };
 		1E6E814421C828D1001A1B67 /* AllRidesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6E814321C828D1001A1B67 /* AllRidesTableViewController.swift */; };
-		1E7C437B21CAB8A80062680C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7C437A21CAB8A80062680C /* HomeViewController.swift */; };
+		1EA7E11921CC35DA0033C879 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA7E11821CC35DA0033C879 /* SessionManager.swift */; };
+		1EB1610521CB0CE10014AD85 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB1610421CB0CE10014AD85 /* LoginViewController.swift */; };
+		1EB1610721CB0D270014AD85 /* SingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB1610621CB0D270014AD85 /* SingUpViewController.swift */; };
+		1EB1610921CB0D570014AD85 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB1610821CB0D570014AD85 /* ProfileViewController.swift */; };
+		1EB1610C21CB0D970014AD85 /* UIStoryboardSegueWithCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB1610B21CB0D970014AD85 /* UIStoryboardSegueWithCompletion.swift */; };
+		1EB1610E21CB0DA50014AD85 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB1610D21CB0DA50014AD85 /* ErrorHandling.swift */; };
+		1EB1611021CB0DD70014AD85 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB1610F21CB0DD70014AD85 /* Extensions.swift */; };
+		1EB1611221CB0E7C0014AD85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB1611121CB0E7C0014AD85 /* LaunchScreen.storyboard */; };
 		1EDF7CC021C92B7D000192D7 /* AddRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDF7CBF21C92B7D000192D7 /* AddRideViewController.swift */; };
 		1EDF7CC421C92E1C000192D7 /* RideInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDF7CC321C92E1C000192D7 /* RideInfo.swift */; };
 		1EDF7CC621C92E3D000192D7 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDF7CC521C92E3D000192D7 /* Address.swift */; };
@@ -30,8 +38,16 @@
 		1E1E17EA21B5673E00174653 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E1E17ED21B5673E00174653 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E1E17EF21B5673E00174653 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E26403E21CBE940004CD3A2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1E6E814321C828D1001A1B67 /* AllRidesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllRidesTableViewController.swift; sourceTree = "<group>"; };
-		1E7C437A21CAB8A80062680C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1EA7E11821CC35DA0033C879 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		1EB1610421CB0CE10014AD85 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1EB1610621CB0D270014AD85 /* SingUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpViewController.swift; sourceTree = "<group>"; };
+		1EB1610821CB0D570014AD85 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		1EB1610B21CB0D970014AD85 /* UIStoryboardSegueWithCompletion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardSegueWithCompletion.swift; sourceTree = "<group>"; };
+		1EB1610D21CB0DA50014AD85 /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
+		1EB1610F21CB0DD70014AD85 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1EB1611121CB0E7C0014AD85 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EDF7CBF21C92B7D000192D7 /* AddRideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRideViewController.swift; sourceTree = "<group>"; };
 		1EDF7CC321C92E1C000192D7 /* RideInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideInfo.swift; sourceTree = "<group>"; };
 		1EDF7CC521C92E3D000192D7 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
@@ -77,8 +93,9 @@
 		1E1E17E221B5673E00174653 /* Carmilo */ = {
 			isa = PBXGroup;
 			children = (
+				1EB1610A21CB0D760014AD85 /* Helpers */,
+				1EB1610321CB0CC30014AD85 /* ViewController */,
 				1E1E17E321B5673E00174653 /* AppDelegate.swift */,
-				1E7C437A21CAB8A80062680C /* HomeViewController.swift */,
 				1EFCADA121CAB602002EBB55 /* Auth0.plist */,
 				1E1E17E721B5673E00174653 /* Main.storyboard */,
 				1EDF7CC921C95293000192D7 /* UserPersonalRidesTableViewController.swift */,
@@ -91,8 +108,31 @@
 				1EDF7CCD21C97949000192D7 /* Passenger.swift */,
 				1EDF7CBF21C92B7D000192D7 /* AddRideViewController.swift */,
 				1EDF7CC521C92E3D000192D7 /* Address.swift */,
+				1EB1611121CB0E7C0014AD85 /* LaunchScreen.storyboard */,
+				1EA7E11821CC35DA0033C879 /* SessionManager.swift */,
 			);
 			path = Carmilo;
+			sourceTree = "<group>";
+		};
+		1EB1610321CB0CC30014AD85 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1EB1610421CB0CE10014AD85 /* LoginViewController.swift */,
+				1EB1610621CB0D270014AD85 /* SingUpViewController.swift */,
+				1EB1610821CB0D570014AD85 /* ProfileViewController.swift */,
+				1E26403E21CBE940004CD3A2 /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1EB1610A21CB0D760014AD85 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1EB1610B21CB0D970014AD85 /* UIStoryboardSegueWithCompletion.swift */,
+				1EB1610D21CB0DA50014AD85 /* ErrorHandling.swift */,
+				1EB1610F21CB0DD70014AD85 /* Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		2077173757E1632426A5636F /* Frameworks */ = {
@@ -175,6 +215,7 @@
 				1E1E17EE21B5673E00174653 /* LaunchScreen.storyboard in Resources */,
 				1E1E17EB21B5673E00174653 /* Assets.xcassets in Resources */,
 				1E1E17E921B5673E00174653 /* Main.storyboard in Resources */,
+				1EB1611221CB0E7C0014AD85 /* LaunchScreen.storyboard in Resources */,
 				1EFCADA221CAB602002EBB55 /* Auth0.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,13 +278,20 @@
 			files = (
 				1EDF7CC621C92E3D000192D7 /* Address.swift in Sources */,
 				1E1E17E421B5673E00174653 /* AppDelegate.swift in Sources */,
+				1EB1610C21CB0D970014AD85 /* UIStoryboardSegueWithCompletion.swift in Sources */,
 				1EDF7CCE21C97949000192D7 /* Passenger.swift in Sources */,
 				1EDF7CC421C92E1C000192D7 /* RideInfo.swift in Sources */,
+				1E26403F21CBE940004CD3A2 /* HomeViewController.swift in Sources */,
 				1E6E814421C828D1001A1B67 /* AllRidesTableViewController.swift in Sources */,
-				1E7C437B21CAB8A80062680C /* HomeViewController.swift in Sources */,
 				1EDF7CCA21C95293000192D7 /* UserPersonalRidesTableViewController.swift in Sources */,
 				1EDF7CC021C92B7D000192D7 /* AddRideViewController.swift in Sources */,
 				1EDF7CC821C93335000192D7 /* Ride.swift in Sources */,
+				1EB1611021CB0DD70014AD85 /* Extensions.swift in Sources */,
+				1EB1610921CB0D570014AD85 /* ProfileViewController.swift in Sources */,
+				1EB1610E21CB0DA50014AD85 /* ErrorHandling.swift in Sources */,
+				1EB1610721CB0D270014AD85 /* SingUpViewController.swift in Sources */,
+				1EA7E11921CC35DA0033C879 /* SessionManager.swift in Sources */,
+				1EB1610521CB0CE10014AD85 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

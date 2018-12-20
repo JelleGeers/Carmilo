@@ -9,12 +9,15 @@
 import UIKit
 import Auth0
 class HomeViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        // HomeViewController.swift
+        // Create an instance of the credentials manager for storing credentials
+        
         Auth0
             .webAuth()
-            .scope("openid profile")
+            .scope("openid profile offline_access")
             .audience("https://appswiftandroid.eu.auth0.com/userinfo")
             .start {
                 switch $0 {
@@ -22,10 +25,11 @@ class HomeViewController: UIViewController {
                     // Handle the error
                     print("Error: \(error)")
                 case .success(let credentials):
-                    // Do something with credentials e.g.: save them.
                     // Auth0 will automatically dismiss the login page
-                    print("Credentials: \(credentials)")
+                    // Store the credentials
+                    credentialsManager.store(credentials: credentials)
                 }
+        }
         }
 
         // Do any additional setup after loading the view.
@@ -43,4 +47,5 @@ class HomeViewController: UIViewController {
     }
     */
 
+}
 }

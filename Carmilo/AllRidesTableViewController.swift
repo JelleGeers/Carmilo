@@ -1,11 +1,10 @@
 //
-//  ViewController.swift
-//  swift4_1_json_decode
+//  Ride.swift
+//  Carmilo
 //
-//  Created by Brian Voong on 4/2/18.
-//  Copyright © 2018 Brian Voong. All rights reserved.
+//  Created by Jelle Geers on 18/12/2018.
+//  Copyright © 2018 Jelle Geers. All rights reserved.
 //
-
 import UIKit
 
 class AllRidesTableViewController: UITableViewController {

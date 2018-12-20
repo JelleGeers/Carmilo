@@ -1,11 +1,3 @@
-//
-//  AllRidesTableViewController.swift
-//  Carmilo
-//
-//  Created by Jelle Geers on 18/12/2018.
-//  Copyright © 2018 Jelle Geers. All rights reserved.
-//
-
 import UIKit
 
 class UserPersonalRidesTableViewController: UITableViewController {
@@ -18,7 +10,10 @@ class UserPersonalRidesTableViewController: UITableViewController {
         navigationItem.title = "Ride List"
         fetchJSON()
     }
-    
+    @IBAction func logout(_ sender: UIBarButtonItem) {
+        _ = SessionManager.shared.logout()
+        self.presentingViewController?.dismiss(animated: true, completion: nil)
+    }
     fileprivate func fetchJSON() {
         let urlString = "http://localhost:3000/API/rides/5c195119615068bb5048b7f4/rides"
         guard let url = URL(string: urlString) else { return }
