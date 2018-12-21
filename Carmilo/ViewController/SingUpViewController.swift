@@ -17,8 +17,6 @@ class SignUpViewController: UIViewController {
     
     var retrievedCredentials: Credentials?
     
-    // MARK: - Lifecycle
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.actionButtons.forEach { $0.roundLaterals() }
@@ -28,8 +26,6 @@ class SignUpViewController: UIViewController {
     override var preferredStatusBarStyle : UIStatusBarStyle {
         return .lightContent
     }
-    
-    // MARK: - IBAction
     
     @IBAction func register(_ sender: UIButton) {
         self.performRegister()
@@ -46,8 +42,6 @@ class SignUpViewController: UIViewController {
     @IBAction func textFieldEditingChanged(_ sender: UITextField) {
         self.validateForm()
     }
-    
-    // MARK: - Private
     
     fileprivate var loading: Bool = false {
         didSet {
@@ -136,7 +130,7 @@ class SignUpViewController: UIViewController {
     }
     
     fileprivate var formIsValid: Bool {
-        return self.emailTextField.hasText && self.passwordTextField.hasText
+        return self.emailTextField.hasText && self.passwordTextField.hasText && self.firstNameTextField.hasText && self.lastNameTextField.hasText
     }
     
 }

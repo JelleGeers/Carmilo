@@ -8,5 +8,4 @@ class UIStoryboardSegueWithCompletion: UIStoryboardSegue {
         super.perform()
         self.completion?()
     }
-    
 }

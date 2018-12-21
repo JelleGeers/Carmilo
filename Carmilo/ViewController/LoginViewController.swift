@@ -13,8 +13,6 @@ class LoginViewController: UIViewController {
     @IBOutlet var actionButtons: [UIButton]!
     @IBOutlet var textFields: [UITextField]!
     
-    // MARK: - Lifecycle
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.actionButtons.forEach { $0.roundLaterals() }
@@ -24,8 +22,6 @@ class LoginViewController: UIViewController {
     override var preferredStatusBarStyle : UIStatusBarStyle {
         return .lightContent
     }
-    
-    // MARK: - IBAction
     
     @IBAction func login(_ sender: UIButton) {
         self.performLogin()
@@ -53,16 +49,12 @@ class LoginViewController: UIViewController {
         }
     }
     
-    // MARK: - Segue
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let profileViewController = segue.destination as? ProfileViewController else {
             return
         }
         profileViewController.loginCredentials = self.retrievedCredentials!
     }
-    
-    // MARK: - Private
     
     fileprivate var retrievedCredentials: Credentials?
     

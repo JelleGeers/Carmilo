@@ -27,6 +27,7 @@
 		1EDF7CC821C93335000192D7 /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDF7CC721C93335000192D7 /* Ride.swift */; };
 		1EDF7CCA21C95293000192D7 /* UserPersonalRidesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDF7CC921C95293000192D7 /* UserPersonalRidesTableViewController.swift */; };
 		1EDF7CCE21C97949000192D7 /* Passenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDF7CCD21C97949000192D7 /* Passenger.swift */; };
+		1EE76D1321CDAD5E007B3401 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE76D1221CDAD5E007B3401 /* User.swift */; };
 		1EFCADA221CAB602002EBB55 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1EFCADA121CAB602002EBB55 /* Auth0.plist */; };
 		AE9989EAFFDD2B61288F47C5 /* Pods_Carmilo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222E7C863E6FA148A56B00D3 /* Pods_Carmilo.framework */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		1EDF7CC721C93335000192D7 /* Ride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
 		1EDF7CC921C95293000192D7 /* UserPersonalRidesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPersonalRidesTableViewController.swift; sourceTree = "<group>"; };
 		1EDF7CCD21C97949000192D7 /* Passenger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passenger.swift; sourceTree = "<group>"; };
+		1EE76D1221CDAD5E007B3401 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1EFCADA121CAB602002EBB55 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
 		222E7C863E6FA148A56B00D3 /* Pods_Carmilo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carmilo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D1A35C3098A0EB8C510D16B /* Pods-Carmilo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carmilo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Carmilo/Pods-Carmilo.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				1EDF7CC521C92E3D000192D7 /* Address.swift */,
 				1EB1611121CB0E7C0014AD85 /* LaunchScreen.storyboard */,
 				1EA7E11821CC35DA0033C879 /* SessionManager.swift */,
+				1EE76D1221CDAD5E007B3401 /* User.swift */,
 			);
 			path = Carmilo;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				1EDF7CC421C92E1C000192D7 /* RideInfo.swift in Sources */,
 				1E26403F21CBE940004CD3A2 /* HomeViewController.swift in Sources */,
 				1E6E814421C828D1001A1B67 /* AllRidesTableViewController.swift in Sources */,
+				1EE76D1321CDAD5E007B3401 /* User.swift in Sources */,
 				1EDF7CCA21C95293000192D7 /* UserPersonalRidesTableViewController.swift in Sources */,
 				1EDF7CC021C92B7D000192D7 /* AddRideViewController.swift in Sources */,
 				1EDF7CC821C93335000192D7 /* Ride.swift in Sources */,
