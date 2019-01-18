@@ -6,8 +6,9 @@
 //  Copyright © 2018 Jelle Geers. All rights reserved.
 //
 import UIKit
-
+import Auth0
 class AllRidesTableViewController: UITableViewController {
+    var loginCredentials: Credentials!
     
     var rides = [Ride]()
     var myIndex = 0

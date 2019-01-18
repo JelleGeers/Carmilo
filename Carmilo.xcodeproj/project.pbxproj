@@ -95,34 +95,42 @@
 		1E1E17E221B5673E00174653 /* Carmilo */ = {
 			isa = PBXGroup;
 			children = (
+				1E775D5F21F22C7500EE9E74 /* domain */,
 				1EB1610A21CB0D760014AD85 /* Helpers */,
 				1EB1610321CB0CC30014AD85 /* ViewController */,
 				1E1E17E321B5673E00174653 /* AppDelegate.swift */,
 				1EFCADA121CAB602002EBB55 /* Auth0.plist */,
 				1E1E17E721B5673E00174653 /* Main.storyboard */,
-				1EDF7CC921C95293000192D7 /* UserPersonalRidesTableViewController.swift */,
 				1E1E17EA21B5673E00174653 /* Assets.xcassets */,
 				1E1E17EC21B5673E00174653 /* LaunchScreen.storyboard */,
 				1E1E17EF21B5673E00174653 /* Info.plist */,
-				1E6E814321C828D1001A1B67 /* AllRidesTableViewController.swift */,
-				1EDF7CC721C93335000192D7 /* Ride.swift */,
-				1EDF7CC321C92E1C000192D7 /* RideInfo.swift */,
-				1EDF7CCD21C97949000192D7 /* Passenger.swift */,
-				1EDF7CBF21C92B7D000192D7 /* AddRideViewController.swift */,
-				1EDF7CC521C92E3D000192D7 /* Address.swift */,
 				1EB1611121CB0E7C0014AD85 /* LaunchScreen.storyboard */,
 				1EA7E11821CC35DA0033C879 /* SessionManager.swift */,
-				1EE76D1221CDAD5E007B3401 /* User.swift */,
 			);
 			path = Carmilo;
+			sourceTree = "<group>";
+		};
+		1E775D5F21F22C7500EE9E74 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				1EDF7CC721C93335000192D7 /* Ride.swift */,
+				1EDF7CCD21C97949000192D7 /* Passenger.swift */,
+				1EE76D1221CDAD5E007B3401 /* User.swift */,
+				1EDF7CC521C92E3D000192D7 /* Address.swift */,
+				1EDF7CC321C92E1C000192D7 /* RideInfo.swift */,
+			);
+			path = domain;
 			sourceTree = "<group>";
 		};
 		1EB1610321CB0CC30014AD85 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				1EDF7CBF21C92B7D000192D7 /* AddRideViewController.swift */,
 				1EB1610421CB0CE10014AD85 /* LoginViewController.swift */,
 				1EB1610621CB0D270014AD85 /* SingUpViewController.swift */,
 				1EB1610821CB0D570014AD85 /* ProfileViewController.swift */,
+				1EDF7CC921C95293000192D7 /* UserPersonalRidesTableViewController.swift */,
+				1E6E814321C828D1001A1B67 /* AllRidesTableViewController.swift */,
 				1E26403E21CBE940004CD3A2 /* HomeViewController.swift */,
 			);
 			path = ViewController;

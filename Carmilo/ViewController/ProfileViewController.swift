@@ -42,8 +42,7 @@ class ProfileViewController: UIViewController {
     
     
     // MARK: - Private
-    
-    fileprivate func retrieveProfile() {
+    public func retrieveProfile() {
         guard let accessToken = loginCredentials.accessToken else {
             print("Error retrieving profile")
             let _ = self.navigationController?.popViewController(animated: true)
@@ -57,7 +56,7 @@ class ProfileViewController: UIViewController {
                     switch result {
                     case .success(let profile):
                         //Meegeven van het email adhv het token profil
-                        self.addUserToDatabase(profileEmail: (profile.name ?? nil)!)
+                        //self.addUserToDatabase(profileEmail: (profile.gender ?? nil)!)
                         self.welcomeLabel.text = "Welcome, \(profile.name ?? "no name")"
                         guard let pictureURL = profile.picture else { return }
                         let task = URLSession.shared.dataTask(with: pictureURL) { (data, response, error) in

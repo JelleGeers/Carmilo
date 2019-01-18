@@ -8,9 +8,9 @@
 		<true/>
 	</dict>
 	<key>Auth0Domain</key>
-	<string>appswiftandroid.eu.auth0.com</string>
+	<string>carmilo.eu.auth0.com</string>
 	<key>Auth0ClientId</key>
-	<string>wfKD3pKQxEgcR3GdPwsk1OCR168PB2Jp</string>
+	<string>e6bxFT8yEdBqLbXFb4S4amxgxcgPRRl7</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
