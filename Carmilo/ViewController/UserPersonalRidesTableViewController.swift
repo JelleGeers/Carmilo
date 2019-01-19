@@ -10,6 +10,10 @@ class UserPersonalRidesTableViewController: UITableViewController {
         navigationItem.title = "Ride List"
         fetchJSON()
     }
+    
+    @IBAction func unwindToUserRides(segue:UIStoryboardSegue) { }
+    
+    
     @IBAction func logout(_ sender: UIBarButtonItem) {
         _ = SessionManager.shared.logout()
         self.presentingViewController?.dismiss(animated: true, completion: nil)

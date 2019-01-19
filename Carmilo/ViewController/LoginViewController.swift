@@ -28,7 +28,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginWithFacebook(_ sender: UIButton) {
-        self.performFacebookAuthentication()
+        self.performFacebookSignUp()
     }
     
     @IBAction func loginWithTwitter(_ sender: UIButton) {
@@ -95,20 +95,19 @@ class LoginViewController: UIViewController {
         }
     }
     
-    fileprivate func performFacebookAuthentication() {
+    fileprivate func performFacebookSignUp() {
         self.view.endEditing(true)
         self.loading = true
-        guard let clientInfo = plistValues(bundle: Bundle.main) else { return }
         Auth0
             .webAuth()
-            .audience("https://" + clientInfo.domain + "/userinfo")
             .connection("facebook")
             .scope("openid")
             .start { result in
                 DispatchQueue.main.async {
-                    self.spinner.stopAnimating()
+                    self.loading = false
                     switch result {
                     case .success(let credentials):
+                        self.retrievedCredentials = credentials
                         self.loginWithCredentials(credentials)
                     case .failure(let error):
                         self.showAlertForError(error)

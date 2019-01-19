@@ -60,7 +60,7 @@ class ProfileViewController: UIViewController {
                         self.welcomeLabel.text = "Welcome, \(profile.name ?? "no name")"
                         guard let pictureURL = profile.picture else { return }
                         let task = URLSession.shared.dataTask(with: pictureURL) { (data, response, error) in
-                            guard let data = data , error == nil else { return }
+                            //guard let data = data , error == nil else { return }
                             DispatchQueue.main.async {
         
                             }
