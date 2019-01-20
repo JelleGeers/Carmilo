@@ -11,9 +11,11 @@ class UserPersonalRidesTableViewController: UITableViewController {
         fetchJSON()
     }
     
-    @IBAction func unwindToUserRides(segue:UIStoryboardSegue) {self.fetchJSON()}
+    @IBAction func unwindToUserRides(segue:UIStoryboardSegue) {}
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        fetchJSON()
+    }
     @IBAction func logout(_ sender: UIBarButtonItem) {
         _ = SessionManager.shared.logout()
         self.presentingViewController?.dismiss(animated: true, completion: nil)

@@ -12,7 +12,9 @@ class AllRidesTableViewController: UITableViewController {
         navigationItem.title = "Ride List"
         fetchJSON()
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        fetchJSON()
+    }
     fileprivate func fetchJSON() {
         let urlString = "http://localhost:3000/API/rides/"
         guard let url = URL(string: urlString) else { return }
@@ -24,7 +26,6 @@ class AllRidesTableViewController: UITableViewController {
                     return
                 }
 
-                
                 guard let data = data else { return }
                 
                 do {
@@ -48,7 +49,7 @@ class AllRidesTableViewController: UITableViewController {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cellId")
         let ride = rides[indexPath.row]
         cell.textLabel?.text = ride.rides.departure
-        cell.detailTextLabel?.text = String(ride.name + " " + ride.rides.date)
+        cell.detailTextLabel?.text = String(ride.name + " " + ride.rides.date + " " + ride.rides.departure )
         return cell
     }
     

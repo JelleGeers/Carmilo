@@ -59,7 +59,7 @@ class ProfileViewController: UIViewController {
                     case .success(let profile):
                         //Meegeven van het email adhv het token profil
                         //self.addUserToDatabase(profileEmail: (profile.gender ?? nil)!)
-                        self.welcomeLabel.text = "Welcome, \(profile.name ?? "Facebook/Twitter gebruiker") op de carpool applicatie van de hogeschool Gent"
+                        self.welcomeLabel.text = "Welcome, \(profile.name ?? "Facebook/Twitter gebruiker") "
                         
                         self.email = profile.name ?? "tryout@gmail.com"
                         self.addRide()
