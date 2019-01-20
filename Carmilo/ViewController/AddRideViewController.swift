@@ -1,13 +1,4 @@
-//
-//  AddRideViewController.swift
-//  Carmilo
-//
-//  Created by Jelle Geers on 18/12/2018.
-//  Copyright © 2018 Jelle Geers. All rights reserved.
-//
-
 import UIKit
-
 class AddRideViewController: UIViewController {
     
 
@@ -26,12 +17,15 @@ class AddRideViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //if self.textfieldDate.toString().isEmpty || self.textfieldStreet.isEmpty{
+            
+        
         // Do any additional setup after loading the view.
     }
 
     @IBAction func addRide(_ sender: UIButton) {
         let passenger = [Passenger]()
-        guard let url = URL(string:"http://localhost:3000/API/rides/5c195119615068bb5048b7f4/rides/") else { return }
+        guard let url = URL(string:"http://localhost:3000/API/rides/5c41f4d7fc176e0750077b8e/rides") else { return }
         var request = URLRequest(url :url)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -52,18 +46,5 @@ class AddRideViewController: UIViewController {
             }catch {}
         }
         task.resume()
-        
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+        }
 }

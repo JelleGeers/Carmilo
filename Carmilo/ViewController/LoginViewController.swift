@@ -1,6 +1,5 @@
 import UIKit
 import Auth0
-
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
@@ -18,7 +17,8 @@ class LoginViewController: UIViewController {
         self.actionButtons.forEach { $0.roundLaterals() }
         self.textFields.forEach { $0.setPlaceholderTextColor(.lightVioletColor()) }
     }
-    
+    //SOURCE: Deze methoden werd mogelijk gemaakt door de implementatie van Auth0. OP de site heb ik verschillende methodes gevonden die het mogelijk maken om Auth0 te gebruiken
+    //https://auth0.com/docs/quickstart/native/ios-swift
     override var preferredStatusBarStyle : UIStatusBarStyle {
         return .lightContent
     }

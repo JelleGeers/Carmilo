@@ -1,5 +1,6 @@
 import UIKit
-
+//SOURCE: Deze klasse werd mogelijk gemaakt door de implementatie van Auth0. OP de site heb ik verschillende methodes gevonden die het mogelijk maken om Auth0 te gebruiken
+//https://auth0.com/docs/quickstart/native/ios-swift
 extension UIViewController {
     
     @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {

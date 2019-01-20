@@ -57,6 +57,8 @@ class SignUpViewController: UIViewController {
         }
     }
     
+    //SOURCE: Deze methode werd mogelijk gemaakt door de implementatie van Auth0. OP de site heb ik verschillende methodes gevonden die het mogelijk maken om Auth0 te gebruiken
+    //https://auth0.com/docs/quickstart/native/ios-swift
     fileprivate func performRegister() {
         self.view.endEditing(true)
         self.loading = true
@@ -82,7 +84,8 @@ class SignUpViewController: UIViewController {
                 }
         }
     }
-    
+    //SOURCE: Deze methode werd mogelijk gemaakt door de implementatie van Auth0. OP de site heb ik verschillende methodes gevonden die het mogelijk maken om Auth0 te gebruiken
+    //https://auth0.com/docs/quickstart/native/ios-swift
     fileprivate func performFacebookSignUp() {
         self.view.endEditing(true)
         self.loading = true
@@ -103,7 +106,8 @@ class SignUpViewController: UIViewController {
                 }
         }
     }
-    
+    //SOURCE: Deze methode werd mogelijk gemaakt door de implementatie van Auth0. OP de site heb ik verschillende methodes gevonden die het mogelijk maken om Auth0 te gebruiken
+    //https://auth0.com/docs/quickstart/native/ios-swift
     fileprivate func performTwitterSignUp() {
         self.view.endEditing(true)
         self.loading = true
@@ -124,11 +128,13 @@ class SignUpViewController: UIViewController {
                 }
         }
     }
-    
+    //SOURCE: Deze methode werd mogelijk gemaakt door de implementatie van Auth0. OP de site heb ik verschillende methodes gevonden die het mogelijk maken om Auth0 te gebruiken
+    //https://auth0.com/docs/quickstart/native/ios-swift
     fileprivate func validateForm() {
         self.signUpButton.isEnabled = self.formIsValid
     }
-    
+    //SOURCE: Deze methode werd mogelijk gemaakt door de implementatie van Auth0. OP de site heb ik verschillende methodes gevonden die het mogelijk maken om Auth0 te gebruiken
+    //https://auth0.com/docs/quickstart/native/ios-swift
     fileprivate var formIsValid: Bool {
         return self.emailTextField.hasText && self.passwordTextField.hasText && self.firstNameTextField.hasText && self.lastNameTextField.hasText
     }
